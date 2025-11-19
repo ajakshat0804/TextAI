@@ -1,6 +1,3 @@
 streamlit==1.24.0
-transformers==4.34.0
-torch>=2.5.0
-sentencepiece
-requests
+
 
