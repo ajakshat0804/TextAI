@@ -2,8 +2,8 @@
 import streamlit as st
 import re
 
-st.set_page_config(page_title="Text Summarizer by Daksh", layout="centered")
-st.title("Text Summarizer by Akshat & Aditya")
+st.set_page_config(page_title="Text Summarizer", layout="centered")
+st.title("Text Summarizer")
 st.markdown(
     "Paste text below and click **Summarize**. "
     "**Temporary fallback: extractive summarizer (first N sentences) — no heavy libs required.**"
@@ -37,4 +37,5 @@ if st.button("Summarize"):
         st.write(out)
         st.download_button("Download summary (.txt)", out, file_name="summary.txt")
         st.code(out, language="text")
+
 
